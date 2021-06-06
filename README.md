@@ -1,1 +1,1 @@
-# Nhập môn xử lý 
+# Nhập môn xử lý ảnh
