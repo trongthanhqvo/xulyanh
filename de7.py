@@ -42,7 +42,7 @@ plt.imshow(Ig_gradientXY, cmap="gray")
 plt.title("Ig_gradientXY")
 plt.xticks([])
 plt.yticks([])
-# plt.show()
+plt.show()
 
 # 4. Lấy biên bằng phương pháp Candy
 #     Kiểm tra pixel có tọa độ dòng y=181, cột x=120 có là điểm biên của ảnh Ig theo phép dò biên Canny không?
@@ -95,7 +95,7 @@ thresh, Ib = cv2.threshold(Ig, 0, 255, cv2.THRESH_OTSU)
 # cv2.imshow("Image binary", Ib)
 contours, con = cv2.findContours(Ib, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
 cv2.drawContours(I, contours, -1, (0, 0, 255), 2)  # blue
-cv2.imshow("Contour Image", I)
+# cv2.imshow("Contour Image", I)
 
 cv2.waitKey()
 
